@@ -71,7 +71,7 @@ function M.apply()
 
   -- Indent
   vim.api.nvim_set_hl(0, "SnacksIndent", { fg = "#2A2A2A" })
-  vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = p.magenta })
+  vim.api.nvim_set_hl(0, "SnacksIndentScope", { fg = p.red })
 
   -- Explorer
   vim.api.nvim_set_hl(0, "SnacksExplorer", { fg = p.fg, bg = p.bg })
