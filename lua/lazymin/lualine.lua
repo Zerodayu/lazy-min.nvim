@@ -3,7 +3,7 @@ local colors = require("lazymin.colors").palette
 local lazymin = {}
 
 lazymin.normal = {
-  a = { fg = colors.bg1, bg = colors.orange, gui = "bold" },
+  a = { fg = colors.bg1, bg = colors.red, gui = "bold" },
   b = { fg = colors.fg1, bg = "#2A2A2A" },
   c = { fg = colors.gray, bg = "#1A1A1A" },
 }
@@ -21,7 +21,7 @@ lazymin.replace = {
 }
 
 lazymin.command = {
-  a = { fg = colors.bg1, bg = colors.yellow, gui = "bold" },
+  a = { fg = colors.bg1, bg = colors.light_red, gui = "bold" },
 }
 
 lazymin.inactive = {
