@@ -25,105 +25,105 @@ function M.apply()
     ["@comment.xxx"] = { fg = p.purple, bold = true },
 
     -- Constants
-    ["@constant"] = { fg = p.crimson },
-    ["@constant.builtin"] = { fg = p.crimson },
-    ["@constant.macro"] = { fg = p.light_red },
+    ["@constant"] = { fg = p.blue },
+    ["@constant.builtin"] = { fg = p.blue },
+    ["@constant.macro"] = { fg = p.blue },
 
     -- Strings
-    ["@string"] = { fg = p.fg1 },
-    ["@string.documentation"] = { fg = p.fg1 },
-    ["@string.regex"] = { fg = p.crimson },
-    ["@string.escape"] = { fg = p.cursor_red },
-    ["@string.special"] = { fg = p.cursor_red },
-    ["@string.special.symbol"] = { fg = p.cursor_red },
-    ["@string.special.path"] = { fg = p.cursor_red },
-    ["@string.special.url"] = { fg = p.red, italic = true },
+    ["@string"] = { fg = p.orange },
+    ["@string.documentation"] = { fg = p.orange },
+    ["@string.regex"] = { fg = p.orange },
+    ["@string.escape"] = { fg = p.orange },
+    ["@string.special"] = { fg = p.orange },
+    ["@string.special.symbol"] = { fg = p.orange },
+    ["@string.special.path"] = { fg = p.orange },
+    ["@string.special.url"] = { fg = p.orange, italic = true },
 
     -- Characters & numbers
-    ["@character"] = { fg = p.cursor_red },
-    ["@character.special"] = { fg = p.cursor_red },
-    ["@number"] = { fg = p.cursor_red },
-    ["@number.float"] = { fg = p.cursor_red },
-    ["@boolean"] = { fg = p.sky_blue },
+    ["@character"] = { fg = p.orange },
+    ["@character.special"] = { fg = p.orange },
+    ["@number"] = { fg = p.blue },
+    ["@number.float"] = { fg = p.blue },
+    ["@boolean"] = { fg = p.blue },
 
     -- Functions
-    ["@function"] = { fg = p.crimson },
-    ["@function.builtin"] = { fg = p.crimson },
-    ["@function.call"] = { fg = p.red },
-    ["@function.macro"] = { fg = p.light_red },
-    ["@function.method"] = { fg = p.red },
-    ["@function.method.call"] = { fg = p.red },
+    ["@function"] = { fg = p.lavender },
+    ["@function.builtin"] = { fg = p.lavender },
+    ["@function.call"] = { fg = p.lavender },
+    ["@function.macro"] = { fg = p.crimson },
+    ["@function.method"] = { fg = p.lavender },
+    ["@function.method.call"] = { fg = p.lavender },
     ["@function.decorator"] = { fg = p.crimson },
-    ["@constructor"] = { fg = p.light_red },
+    ["@constructor"] = { fg = p.crimson },
 
     -- Variables
-    ["@variable"] = { fg = p.crimson },
+    ["@variable"] = { fg = p.fg0 },
     ["@variable.builtin"] = { fg = p.blue },
-    ["@variable.parameter"] = { fg = p.fg2 },
-    ["@variable.member"] = { fg = p.fg1 },
-    ["@variable.global"] = { fg = p.crimson },
+    ["@variable.parameter"] = { fg = p.fg0 },
+    ["@variable.member"] = { fg = p.fg0 },
+    ["@variable.global"] = { fg = p.fg0 },
     ["@variable.special"] = { fg = p.blue, italic = true },
 
     -- Fields & properties
-    ["@field"] = { fg = p.red },
-    ["@property"] = { fg = p.red },
-    ["@label"] = { fg = p.lavender },
+    ["@field"] = { fg = p.fg0 },
+    ["@property"] = { fg = p.fg0 },
+    ["@label"] = { fg = p.crimson },
 
     -- Types & namespaces
-    ["@type"] = { fg = p.light_red },
-    ["@type.builtin"] = { fg = p.red, italic = true },
-    ["@type.definition"] = { fg = p.light_red },
-    ["@type.qualifier"] = { fg = p.red },
-    ["@type.interface"] = { fg = p.light_red, italic = true },
-    ["@type.parameter"] = { fg = p.light_red, italic = true },
-    ["@namespace"] = { fg = p.medium_red, italic = true },
-    ["@module"] = { fg = p.medium_red, italic = true },
+    ["@type"] = { fg = p.orange },
+    ["@type.builtin"] = { fg = p.orange, italic = true },
+    ["@type.definition"] = { fg = p.orange },
+    ["@type.qualifier"] = { fg = p.crimson },
+    ["@type.interface"] = { fg = p.orange, italic = true },
+    ["@type.parameter"] = { fg = p.orange, italic = true },
+    ["@namespace"] = { fg = p.fg0, italic = true },
+    ["@module"] = { fg = p.fg0, italic = true },
 
     -- Keywords & operators
-    ["@keyword"] = { fg = p.lavender },
-    ["@keyword.function"] = { fg = p.lavender },
-    ["@keyword.operator"] = { fg = p.fg2 },
-    ["@keyword.return"] = { fg = p.lavender },
-    ["@keyword.import"] = { fg = p.lavender },
-    ["@keyword.conditional"] = { fg = p.lavender },
-    ["@keyword.repeat"] = { fg = p.lavender },
-    ["@keyword.exception"] = { fg = p.lavender },
-    ["@keyword.directive"] = { fg = p.blue },
-    ["@keyword.directive.define"] = { fg = p.light_red },
-    ["@keyword.modifier"] = { fg = p.lavender },
-    ["@operator"] = { fg = p.fg2 },
+    ["@keyword"] = { fg = p.crimson },
+    ["@keyword.function"] = { fg = p.crimson },
+    ["@keyword.operator"] = { fg = p.fg0 },
+    ["@keyword.return"] = { fg = p.crimson },
+    ["@keyword.import"] = { fg = p.crimson },
+    ["@keyword.conditional"] = { fg = p.crimson },
+    ["@keyword.repeat"] = { fg = p.crimson },
+    ["@keyword.exception"] = { fg = p.crimson },
+    ["@keyword.directive"] = { fg = p.crimson },
+    ["@keyword.directive.define"] = { fg = p.crimson },
+    ["@keyword.modifier"] = { fg = p.crimson },
+    ["@operator"] = { fg = p.fg0 },
 
     -- Punctuation
-    ["@punctuation"] = { fg = p.fg3 },
-    ["@punctuation.delimiter"] = { fg = p.fg3 },
-    ["@punctuation.bracket"] = { fg = p.fg3 },
-    ["@punctuation.special"] = { fg = p.blue },
-    ["@punctuation.special.symbol"] = { fg = p.blue },
+    ["@punctuation"] = { fg = p.fg0 },
+    ["@punctuation.delimiter"] = { fg = p.fg0 },
+    ["@punctuation.bracket"] = { fg = p.fg0 },
+    ["@punctuation.special"] = { fg = p.fg0 },
+    ["@punctuation.special.symbol"] = { fg = p.fg0 },
 
     -- Decorators & attributes
     ["@attribute"] = { fg = p.crimson, italic = true },
     ["@decorator"] = { fg = p.crimson },
 
     -- Tags
-    ["@tag"] = { fg = p.lavender },
-    ["@tag.attribute"] = { fg = p.crimson, italic = true },
-    ["@tag.delimiter"] = { fg = p.fg2 },
+    ["@tag"] = { fg = p.crimson },
+    ["@tag.attribute"] = { fg = p.fg0, italic = true },
+    ["@tag.delimiter"] = { fg = p.fg0 },
 
     -- Markup
-    ["@markup.strong"] = { fg = p.fg1, bold = true },
-    ["@markup.italic"] = { fg = p.fg1, italic = true },
+    ["@markup.strong"] = { fg = p.fg0, bold = true },
+    ["@markup.italic"] = { fg = p.fg0, italic = true },
     ["@markup.heading"] = { fg = p.crimson, bold = true },
-    ["@markup.link"] = { fg = p.red, underline = true },
-    ["@markup.link.url"] = { fg = p.red, underline = true },
-    ["@markup.link.label"] = { fg = p.red },
-    ["@markup.list"] = { fg = p.red },
-    ["@markup.list.checked"] = { fg = p.sky_blue },
-    ["@markup.list.unchecked"] = { fg = p.red },
-    ["@markup.quote"] = { fg = p.fg3, italic = true },
-    ["@markup.raw"] = { fg = p.fg1 },
-    ["@markup.raw.block"] = { fg = p.fg1 },
-    ["@markup.math"] = { fg = p.cursor_red },
-    ["@markup.underline"] = { fg = p.red, underline = true },
+    ["@markup.link"] = { fg = p.lavender, underline = true },
+    ["@markup.link.url"] = { fg = p.orange, underline = true },
+    ["@markup.link.label"] = { fg = p.fg0 },
+    ["@markup.list"] = { fg = p.fg0 },
+    ["@markup.list.checked"] = { fg = p.blue },
+    ["@markup.list.unchecked"] = { fg = p.fg0 },
+    ["@markup.quote"] = { fg = p.fg0, italic = true },
+    ["@markup.raw"] = { fg = p.orange },
+    ["@markup.raw.block"] = { fg = p.orange },
+    ["@markup.math"] = { fg = p.blue },
+    ["@markup.underline"] = { fg = p.fg0, underline = true },
 
     -- Diff / SCM
     ["@diff.plus"] = { fg = p.sky_blue },
@@ -131,15 +131,15 @@ function M.apply()
     ["@diff.delta"] = { fg = p.red },
 
     -- Preprocessor
-  ["@preproc"] = { fg = p.light_red },
-  ["@include"] = { fg = p.blue },
-  ["@define"] = { fg = p.light_red },
-    ["@conditional"] = { fg = p.lavender },
-    ["@repeat"] = { fg = p.lavender },
-    ["@exception"] = { fg = p.lavender },
+  ["@preproc"] = { fg = p.crimson },
+  ["@include"] = { fg = p.crimson },
+  ["@define"] = { fg = p.crimson },
+    ["@conditional"] = { fg = p.crimson },
+    ["@repeat"] = { fg = p.crimson },
+    ["@exception"] = { fg = p.crimson },
 
     -- Special cases
-    ["@character.printf"] = { fg = p.cursor_red },
+    ["@character.printf"] = { fg = p.orange },
   }
 
   for group, spec in pairs(highlights) do
@@ -147,11 +147,11 @@ function M.apply()
   end
 
   -- Language specific overrides
-  set("@function.builtin.lua", { fg = p.crimson })
+  set("@function.builtin.lua", { fg = p.lavender })
   set("@variable.builtin.lua", { fg = p.blue, italic = true })
-  set("@function.builtin.python", { fg = p.crimson })
+  set("@function.builtin.python", { fg = p.lavender })
   set("@variable.builtin.python", { fg = p.blue, italic = true })
-  set("@function.builtin.javascript", { fg = p.crimson })
+  set("@function.builtin.javascript", { fg = p.lavender })
   set("@variable.builtin.javascript", { fg = p.blue, italic = true })
 end
 

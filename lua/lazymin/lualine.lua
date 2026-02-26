@@ -9,11 +9,11 @@ lazymin.normal = {
 }
 
 lazymin.insert = {
-  a = { fg = colors.bg1, bg = colors.red, gui = "bold" },
+  a = { fg = colors.bg1, bg = colors.sky_blue, gui = "bold" },
 }
 
 lazymin.visual = {
-  a = { fg = colors.bg1, bg = colors.magenta, gui = "bold" },
+  a = { fg = colors.bg1, bg = colors.yellow, gui = "bold" },
 }
 
 lazymin.replace = {
@@ -21,7 +21,7 @@ lazymin.replace = {
 }
 
 lazymin.command = {
-  a = { fg = colors.bg1, bg = colors.light_red, gui = "bold" },
+  a = { fg = colors.bg1, bg = colors.purple, gui = "bold" },
 }
 
 lazymin.inactive = {
