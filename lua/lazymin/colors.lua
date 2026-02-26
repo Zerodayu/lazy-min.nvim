@@ -5,10 +5,7 @@ local M = {}
 M.palette = {
   -- Base shades
   bg0 = "#0D0D0D",
-  bg1 = "#121212",
-  bg2 = "#333333",
-  bg3 = "#212121",
-  bg4 = "#262626",
+  bg1 = "#131313",
 
   fg0 = "#FFFFFF",
   fg1 = "#EAEAEA",
@@ -65,39 +62,39 @@ function M.apply()
   vim.g.colors_name = "lazymin"
 
   set("Normal", { fg = p.fg1, bg = p.bg1 })
-  set("NormalFloat", { fg = p.fg1, bg = p.bg3 })
-  set("FloatBorder", { fg = p.bg2, bg = p.bg3 })
-  set("SignColumn", { fg = p.bg2, bg = p.bg1 })
-  set("NonText", { fg = p.bg2 })
+  set("NormalFloat", { fg = p.fg1, bg = p.bg1 })
+  set("FloatBorder", { fg = p.bg1, bg = p.bg1 })
+  set("SignColumn", { fg = p.bg1, bg = p.bg1 })
+  set("NonText", { fg = p.bg1 })
 
   set("Cursor", { fg = p.bg1, bg = p.cursor_red })
-  set("CursorLine", { bg = p.bg3 })
-  set("CursorColumn", { bg = p.bg3 })
+  set("CursorLine", { bg = p.bg1 })
+  set("CursorColumn", { bg = p.bg1 })
   set("CursorLineNr", { fg = p.cursor_red })
-  set("LineNr", { fg = p.bg2 })
-  set("MatchParen", { fg = p.red, bg = p.bg4, bold = true })
+  set("LineNr", { fg = p.bg1 })
+  set("MatchParen", { fg = p.red, bg = p.bg1, bold = true })
 
-  set("Visual", { fg = p.selfg, bg = p.bg2 })
-  set("VisualNOS", { fg = p.selfg, bg = p.bg2 })
+  set("Visual", { fg = p.selfg, bg = p.bg1 })
+  set("VisualNOS", { fg = p.selfg, bg = p.bg1 })
   set("Search", { fg = p.bg1, bg = p.red })
   set("IncSearch", { fg = p.bg1, bg = p.crimson })
   set("Substitute", { fg = p.bg1, bg = p.crimson })
-  set("HighlightedyankRegion", { bg = p.bg4 })
+  set("HighlightedyankRegion", { bg = p.bg1 })
 
-  set("FoldColumn", { fg = p.bg2, bg = p.bg1 })
-  set("Folded", { fg = p.fg2, bg = p.bg3 })
+  set("FoldColumn", { fg = p.bg1, bg = p.bg1 })
+  set("Folded", { fg = p.fg2, bg = p.bg1 })
 
-  set("StatusLine", { fg = p.fg1, bg = p.bg3 })
-  set("StatusLineNC", { fg = p.fg3, bg = p.bg2 })
-  set("WinSeparator", { fg = p.bg2 })
-  set("VertSplit", { fg = p.bg2 })
-  set("TabLine", { fg = p.fg3, bg = p.bg2 })
+  set("StatusLine", { fg = p.fg1, bg = p.bg1 })
+  set("StatusLineNC", { fg = p.fg3, bg = p.bg1 })
+  set("WinSeparator", { fg = p.bg1 })
+  set("VertSplit", { fg = p.bg1 })
+  set("TabLine", { fg = p.fg3, bg = p.bg1 })
   set("TabLineFill", { bg = p.bg1 })
-  set("TabLineSel", { fg = p.fg1, bg = p.bg3, bold = true })
+  set("TabLineSel", { fg = p.fg1, bg = p.bg1, bold = true })
 
-  set("Pmenu", { fg = p.fg2, bg = p.bg3 })
-  set("PmenuSel", { fg = p.fg1, bg = p.bg2 })
-  set("PmenuSbar", { bg = p.bg2 })
+  set("Pmenu", { fg = p.fg2, bg = p.bg1 })
+  set("PmenuSel", { fg = p.fg1, bg = p.bg1 })
+  set("PmenuSbar", { bg = p.bg1 })
   set("PmenuThumb", { bg = p.fg3 })
   set("WildMenu", { fg = p.bg1, bg = p.red })
 
@@ -144,7 +141,7 @@ function M.apply()
   set("Underlined", { fg = p.red, underline = true })
   set("Todo", { fg = p.bg1, bg = p.light_red, bold = true })
 
-  vim.g.terminal_color_0 = p.bg2
+  vim.g.terminal_color_0 = p.bg1
   vim.g.terminal_color_1 = p.red
   vim.g.terminal_color_2 = p.crimson
   vim.g.terminal_color_3 = p.red
