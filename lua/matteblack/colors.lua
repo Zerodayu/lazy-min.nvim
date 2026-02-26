@@ -25,9 +25,12 @@ M.palette = {
 
   comment = "#8A8A8D",
 
-  -- Accent palette (matches VS Code / Zed ports)
-  red = "#B91C1C",
-  crimson = "#DC2626",
+  -- Accent palette (red-based theme)
+  red = "#A00000",
+  crimson = "#FF0000",
+  cursor_red = "#B91C1C",
+  light_red = "#ff8181",
+  medium_red = "#D35F5F",
   orange = "#F59E0B",
   amber = "#D97706",
   yellow = "#FBBF24",
@@ -67,18 +70,18 @@ function M.apply()
   set("SignColumn", { fg = p.bg2, bg = p.bg1 })
   set("NonText", { fg = p.bg2 })
 
-  set("Cursor", { fg = p.bg1, bg = p.orange })
+  set("Cursor", { fg = p.bg1, bg = p.cursor_red })
   set("CursorLine", { bg = p.bg3 })
   set("CursorColumn", { bg = p.bg3 })
-  set("CursorLineNr", { fg = p.orange })
+  set("CursorLineNr", { fg = p.cursor_red })
   set("LineNr", { fg = p.bg2 })
-  set("MatchParen", { fg = p.orange, bg = p.bg4, bold = true })
+  set("MatchParen", { fg = p.red, bg = p.bg4, bold = true })
 
   set("Visual", { fg = p.selfg, bg = p.bg2 })
   set("VisualNOS", { fg = p.selfg, bg = p.bg2 })
-  set("Search", { fg = p.bg1, bg = p.orange })
-  set("IncSearch", { fg = p.bg1, bg = p.gold })
-  set("Substitute", { fg = p.bg1, bg = p.gold })
+  set("Search", { fg = p.bg1, bg = p.red })
+  set("IncSearch", { fg = p.bg1, bg = p.crimson })
+  set("Substitute", { fg = p.bg1, bg = p.crimson })
   set("HighlightedyankRegion", { bg = p.bg4 })
 
   set("FoldColumn", { fg = p.bg2, bg = p.bg1 })
@@ -96,27 +99,27 @@ function M.apply()
   set("PmenuSel", { fg = p.fg1, bg = p.bg2 })
   set("PmenuSbar", { bg = p.bg2 })
   set("PmenuThumb", { bg = p.fg3 })
-  set("WildMenu", { fg = p.bg1, bg = p.orange })
+  set("WildMenu", { fg = p.bg1, bg = p.red })
 
   set("DiffAdd", { fg = p.teal })
   set("DiffDelete", { fg = p.crimson })
-  set("DiffChange", { fg = p.orange })
-  set("DiffText", { fg = p.orange, bold = true })
+  set("DiffChange", { fg = p.light_red })
+  set("DiffText", { fg = p.light_red, bold = true })
 
   set("DiagnosticOk", { fg = p.teal })
   set("DiagnosticHint", { fg = p.blue })
-  set("DiagnosticInfo", { fg = p.gold })
-  set("DiagnosticWarn", { fg = p.amber })
+  set("DiagnosticInfo", { fg = p.light_red })
+  set("DiagnosticWarn", { fg = p.cursor_red })
   set("DiagnosticError", { fg = p.crimson })
 
   set("Comment", { fg = p.comment, italic = true })
-  set("Constant", { fg = p.amber })
+  set("Constant", { fg = p.red })
   set("String", { fg = p.fg1 })
-  set("Character", { fg = p.gold })
-  set("Number", { fg = p.gold })
-  set("Float", { fg = p.gold })
+  set("Character", { fg = p.red })
+  set("Number", { fg = p.red })
+  set("Float", { fg = p.red })
   set("Boolean", { fg = p.teal })
-  set("Identifier", { fg = p.amber })
+  set("Identifier", { fg = p.red })
   set("Function", { fg = p.crimson })
   set("Statement", { fg = p.green })
   set("Keyword", { fg = p.green })
@@ -124,38 +127,38 @@ function M.apply()
   set("Repeat", { fg = p.green })
   set("Operator", { fg = p.fg2 })
   set("Exception", { fg = p.green })
-  set("PreProc", { fg = p.yellow })
+  set("PreProc", { fg = p.light_red })
   set("Include", { fg = p.blue })
-  set("Define", { fg = p.yellow })
-  set("Macro", { fg = p.yellow })
-  set("PreCondit", { fg = p.yellow })
-  set("Type", { fg = p.yellow })
-  set("StorageClass", { fg = p.yellow })
-  set("Structure", { fg = p.yellow })
-  set("Typedef", { fg = p.yellow })
-  set("Special", { fg = p.orange })
-  set("SpecialChar", { fg = p.gold })
+  set("Define", { fg = p.light_red })
+  set("Macro", { fg = p.light_red })
+  set("PreCondit", { fg = p.light_red })
+  set("Type", { fg = p.light_red })
+  set("StorageClass", { fg = p.light_red })
+  set("Structure", { fg = p.light_red })
+  set("Typedef", { fg = p.light_red })
+  set("Special", { fg = p.red })
+  set("SpecialChar", { fg = p.red })
   set("Tag", { fg = p.green })
   set("Delimiter", { fg = p.fg3 })
   set("SpecialComment", { fg = p.comment, italic = true })
-  set("Underlined", { fg = p.orange, underline = true })
-  set("Todo", { fg = p.bg1, bg = p.yellow, bold = true })
+  set("Underlined", { fg = p.red, underline = true })
+  set("Todo", { fg = p.bg1, bg = p.light_red, bold = true })
 
   vim.g.terminal_color_0 = p.bg2
   vim.g.terminal_color_1 = p.red
-  vim.g.terminal_color_2 = "#129B70"
-  vim.g.terminal_color_3 = p.orange
-  vim.g.terminal_color_4 = "#325DCA"
-  vim.g.terminal_color_5 = p.purple
-  vim.g.terminal_color_6 = p.cyan
+  vim.g.terminal_color_2 = p.crimson
+  vim.g.terminal_color_3 = p.red
+  vim.g.terminal_color_4 = p.light_red
+  vim.g.terminal_color_5 = p.medium_red
+  vim.g.terminal_color_6 = p.fg2
   vim.g.terminal_color_7 = p.fg2
   vim.g.terminal_color_8 = p.fg3
-  vim.g.terminal_color_9 = "#E62222"
-  vim.g.terminal_color_10 = "#22C55E"
-  vim.g.terminal_color_11 = "#F1CB42"
-  vim.g.terminal_color_12 = "#3C71F6"
-  vim.g.terminal_color_13 = "#B027DE"
-  vim.g.terminal_color_14 = "#24D0C7"
+  vim.g.terminal_color_9 = p.cursor_red
+  vim.g.terminal_color_10 = p.crimson
+  vim.g.terminal_color_11 = p.red
+  vim.g.terminal_color_12 = p.light_red
+  vim.g.terminal_color_13 = p.cursor_red
+  vim.g.terminal_color_14 = p.fg1
   vim.g.terminal_color_15 = p.fg0
   vim.g.terminal_color_background = p.bg1
   vim.g.terminal_color_foreground = p.fg1
