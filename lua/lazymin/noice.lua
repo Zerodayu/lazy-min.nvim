@@ -7,14 +7,14 @@ function M.apply()
 
   -- Noice.nvim plugin highlight groups
   -- Command line
-  vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = p.fg1, bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = p.fg1, bg = p.bg2 })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIcon", { fg = p.red })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconCmdline", { fg = p.red })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconFilter", { fg = p.light_red })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconLua", { fg = p.crimson })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconSearch", { fg = p.light_red })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { fg = p.fg1, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = p.gray, bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { fg = p.fg1, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = p.gray, bg = p.bg2 })
   vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { fg = p.red, bold = true })
 
   -- Command line prompt
@@ -38,15 +38,15 @@ function M.apply()
   vim.api.nvim_set_hl(0, "NoiceCompletionItemKindTypeParameter", { fg = p.pink })
 
   -- Confirm dialog
-  vim.api.nvim_set_hl(0, "NoiceConfirm", { fg = p.fg1, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoiceConfirmBorder", { fg = p.gray, bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoiceConfirm", { fg = p.fg1, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoiceConfirmBorder", { fg = p.gray, bg = p.bg2 })
 
   -- Messages
-  vim.api.nvim_set_hl(0, "NoicePopup", { fg = p.fg1, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoicePopupBorder", { fg = p.gray, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoicePopupmenu", { fg = p.fg1, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoicePopupmenuBorder", { fg = p.gray, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoicePopupmenuSelected", { fg = p.fg1, bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoicePopup", { fg = p.fg1, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoicePopupBorder", { fg = p.gray, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoicePopupmenu", { fg = p.fg1, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoicePopupmenuBorder", { fg = p.gray, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoicePopupmenuSelected", { fg = p.fg1, bg = p.bg3 })
   vim.api.nvim_set_hl(0, "NoicePopupmenuMatch", { fg = p.light_red, bold = true })
 
   -- Split view
@@ -66,18 +66,18 @@ function M.apply()
   vim.api.nvim_set_hl(0, "NoiceFormatProgressTodo", { fg = p.gray })
 
   -- Mini views
-  vim.api.nvim_set_hl(0, "NoiceMini", { fg = p.fg1, bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoiceMini", { fg = p.fg1, bg = p.bg2 })
 
   -- Scrollbar
-  vim.api.nvim_set_hl(0, "NoiceScrollbar", { bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoiceScrollbar", { bg = p.bg3 })
   vim.api.nvim_set_hl(0, "NoiceScrollbarThumb", { bg = p.gray })
 
   -- Cursor
   vim.api.nvim_set_hl(0, "NoiceCursor", { fg = p.bg1, bg = p.red })
 
   -- History
-  vim.api.nvim_set_hl(0, "NoiceHistory", { fg = p.fg1, bg = p.bg1 })
-  vim.api.nvim_set_hl(0, "NoiceHistoryBorder", { fg = p.gray, bg = p.bg1 })
+  vim.api.nvim_set_hl(0, "NoiceHistory", { fg = p.fg1, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoiceHistoryBorder", { fg = p.gray, bg = p.bg2 })
 end
 
 return M
