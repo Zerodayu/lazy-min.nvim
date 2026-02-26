@@ -44,7 +44,7 @@ function M.apply()
     ["@character.special"] = { fg = p.cursor_red },
     ["@number"] = { fg = p.cursor_red },
     ["@number.float"] = { fg = p.cursor_red },
-    ["@boolean"] = { fg = p.teal },
+    ["@boolean"] = { fg = p.sky_blue },
 
     -- Functions
     ["@function"] = { fg = p.crimson },
@@ -67,7 +67,7 @@ function M.apply()
     -- Fields & properties
     ["@field"] = { fg = p.red },
     ["@property"] = { fg = p.red },
-    ["@label"] = { fg = p.green },
+    ["@label"] = { fg = p.lavender },
 
     -- Types & namespaces
     ["@type"] = { fg = p.light_red },
@@ -80,17 +80,17 @@ function M.apply()
     ["@module"] = { fg = p.medium_red, italic = true },
 
     -- Keywords & operators
-    ["@keyword"] = { fg = p.green },
-    ["@keyword.function"] = { fg = p.green },
+    ["@keyword"] = { fg = p.lavender },
+    ["@keyword.function"] = { fg = p.lavender },
     ["@keyword.operator"] = { fg = p.fg2 },
-    ["@keyword.return"] = { fg = p.green },
-    ["@keyword.import"] = { fg = p.green },
-    ["@keyword.conditional"] = { fg = p.green },
-    ["@keyword.repeat"] = { fg = p.green },
-    ["@keyword.exception"] = { fg = p.green },
+    ["@keyword.return"] = { fg = p.lavender },
+    ["@keyword.import"] = { fg = p.lavender },
+    ["@keyword.conditional"] = { fg = p.lavender },
+    ["@keyword.repeat"] = { fg = p.lavender },
+    ["@keyword.exception"] = { fg = p.lavender },
     ["@keyword.directive"] = { fg = p.blue },
     ["@keyword.directive.define"] = { fg = p.light_red },
-    ["@keyword.modifier"] = { fg = p.green },
+    ["@keyword.modifier"] = { fg = p.lavender },
     ["@operator"] = { fg = p.fg2 },
 
     -- Punctuation
@@ -105,7 +105,7 @@ function M.apply()
     ["@decorator"] = { fg = p.crimson },
 
     -- Tags
-    ["@tag"] = { fg = p.green },
+    ["@tag"] = { fg = p.lavender },
     ["@tag.attribute"] = { fg = p.crimson, italic = true },
     ["@tag.delimiter"] = { fg = p.fg2 },
 
@@ -117,7 +117,7 @@ function M.apply()
     ["@markup.link.url"] = { fg = p.red, underline = true },
     ["@markup.link.label"] = { fg = p.red },
     ["@markup.list"] = { fg = p.red },
-    ["@markup.list.checked"] = { fg = p.teal },
+    ["@markup.list.checked"] = { fg = p.sky_blue },
     ["@markup.list.unchecked"] = { fg = p.red },
     ["@markup.quote"] = { fg = p.fg3, italic = true },
     ["@markup.raw"] = { fg = p.fg1 },
@@ -126,7 +126,7 @@ function M.apply()
     ["@markup.underline"] = { fg = p.red, underline = true },
 
     -- Diff / SCM
-    ["@diff.plus"] = { fg = p.teal },
+    ["@diff.plus"] = { fg = p.sky_blue },
     ["@diff.minus"] = { fg = p.crimson },
     ["@diff.delta"] = { fg = p.red },
 
@@ -134,9 +134,9 @@ function M.apply()
   ["@preproc"] = { fg = p.light_red },
   ["@include"] = { fg = p.blue },
   ["@define"] = { fg = p.light_red },
-    ["@conditional"] = { fg = p.green },
-    ["@repeat"] = { fg = p.green },
-    ["@exception"] = { fg = p.green },
+    ["@conditional"] = { fg = p.lavender },
+    ["@repeat"] = { fg = p.lavender },
+    ["@exception"] = { fg = p.lavender },
 
     -- Special cases
     ["@character.printf"] = { fg = p.cursor_red },

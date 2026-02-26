@@ -31,14 +31,14 @@ M.palette = {
   cursor_red = "#B91C1C",
   light_red = "#ff8181",
   medium_red = "#D35F5F",
-  orange = "#F59E0B",
+  orange = "#F59E0B", 
   amber = "#D97706",
-  yellow = "#FBBF24",
+  yellow = "#FBBF24", 
   gold = "#EFBF04",
   ochre = "#BF9903",
 
-  green = "#059669",
-  teal = "#10B981",
+  lavender = "#b392f0",
+  sky_blue = "#79b8ff",
   blue = "#3B82F6",
   purple = "#8D20B2",
   cyan = "#1EA7A0",
@@ -101,12 +101,12 @@ function M.apply()
   set("PmenuThumb", { bg = p.fg3 })
   set("WildMenu", { fg = p.bg1, bg = p.red })
 
-  set("DiffAdd", { fg = p.teal })
+  set("DiffAdd", { fg = p.sky_blue })
   set("DiffDelete", { fg = p.crimson })
   set("DiffChange", { fg = p.light_red })
   set("DiffText", { fg = p.light_red, bold = true })
 
-  set("DiagnosticOk", { fg = p.teal })
+  set("DiagnosticOk", { fg = p.sky_blue })
   set("DiagnosticHint", { fg = p.blue })
   set("DiagnosticInfo", { fg = p.light_red })
   set("DiagnosticWarn", { fg = p.cursor_red })
@@ -118,15 +118,15 @@ function M.apply()
   set("Character", { fg = p.red })
   set("Number", { fg = p.red })
   set("Float", { fg = p.red })
-  set("Boolean", { fg = p.teal })
+  set("Boolean", { fg = p.sky_blue })
   set("Identifier", { fg = p.red })
   set("Function", { fg = p.crimson })
-  set("Statement", { fg = p.green })
-  set("Keyword", { fg = p.green })
-  set("Conditional", { fg = p.green })
-  set("Repeat", { fg = p.green })
+  set("Statement", { fg = p.lavender })
+  set("Keyword", { fg = p.lavender })
+  set("Conditional", { fg = p.lavender })
+  set("Repeat", { fg = p.lavender })
   set("Operator", { fg = p.fg2 })
-  set("Exception", { fg = p.green })
+  set("Exception", { fg = p.lavender })
   set("PreProc", { fg = p.light_red })
   set("Include", { fg = p.blue })
   set("Define", { fg = p.light_red })
@@ -138,7 +138,7 @@ function M.apply()
   set("Typedef", { fg = p.light_red })
   set("Special", { fg = p.red })
   set("SpecialChar", { fg = p.red })
-  set("Tag", { fg = p.green })
+  set("Tag", { fg = p.lavender })
   set("Delimiter", { fg = p.fg3 })
   set("SpecialComment", { fg = p.comment, italic = true })
   set("Underlined", { fg = p.red, underline = true })
