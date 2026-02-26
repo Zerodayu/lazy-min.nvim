@@ -62,7 +62,7 @@ function M.apply()
     vim.cmd("syntax reset")
   end
   vim.o.background = "dark"
-  vim.g.colors_name = "matteblack"
+  vim.g.colors_name = "lazymin"
 
   set("Normal", { fg = p.fg1, bg = p.bg1 })
   set("NormalFloat", { fg = p.fg1, bg = p.bg3 })
@@ -163,11 +163,11 @@ function M.apply()
   vim.g.terminal_color_background = p.bg1
   vim.g.terminal_color_foreground = p.fg1
 
-  require("matteblack.treesitter").apply()
-  require("matteblack.snacks").apply()
-  require("matteblack.todo-comments").apply()
-  require("matteblack.noice").apply()
-  require("matteblack.neotree").apply()
+  require("lazymin.treesitter").apply()
+  require("lazymin.snacks").apply()
+  require("lazymin.todo-comments").apply()
+  require("lazymin.noice").apply()
+  require("lazymin.neotree").apply()
 end
 
 return M

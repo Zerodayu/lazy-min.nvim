@@ -1,6 +1,6 @@
 ---@diagnostic disable: undefined-global
 
-local colors = require("matteblack.colors")
+local colors = require("lazymin.colors")
 
 local M = {}
 

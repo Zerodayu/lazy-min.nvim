@@ -1,4 +1,4 @@
-# matteblack.nvim (WIP)
+# lazymin.nvim (WIP)
 
 A Matte Black colorscheme for Neovim.
 
@@ -22,11 +22,11 @@ TBD: Screenshots will be added soon.
 
 ```lua
 {
-  "tahayvr/matteblack.nvim",
+  "tahayvr/lazymin.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme "matteblack"
+    vim.cmd.colorscheme "lazymin"
   end,
 }
 ```
@@ -39,10 +39,10 @@ I've only tested this with lazy.nvim, but it should work with other plugin manag
 
 ```lua
 -- Apply the complete theme (includes treesitter and Snacks support)
-require("matteblack").colorscheme()
+require("lazymin").colorscheme()
 
 -- Or use the traditional method
-vim.cmd.colorscheme "matteblack"
+vim.cmd.colorscheme "lazymin"
 ```
 
 <!--
@@ -51,7 +51,7 @@ vim.cmd.colorscheme "matteblack"
 ```lua
 require('lualine').setup {
   options = {
-    theme = require("matteblack").lualine()
+    theme = require("lazymin").lualine()
   }
 }
 ```
@@ -71,7 +71,7 @@ The theme includes comprehensive support for [Snacks.nvim](https://github.com/fo
 ```lua
 -- Snacks theming is applied automatically with the main theme
 -- Or apply Snacks theming separately:
-require("matteblack").snacks()
+require("lazymin").snacks()
 ```
 
 ### Treesitter Support

@@ -1,4 +1,4 @@
-local colors = require("matteblack.colors").palette
+local colors = require("lazymin.colors").palette
 
 local M = {}
 

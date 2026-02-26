@@ -1,4 +1,4 @@
-# matteblack.nvim Development Plan
+# lazymin.nvim Development Plan
 
 ## Plugin Support Roadmap
 
