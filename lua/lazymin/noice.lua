@@ -13,8 +13,8 @@ function M.apply()
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconFilter", { fg = p.light_red })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconLua", { fg = p.crimson })
   vim.api.nvim_set_hl(0, "NoiceCmdlineIconSearch", { fg = p.light_red })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { fg = p.fg1, bg = p.bg2 })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = p.gray, bg = p.bg2 })
+  vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { fg = p.fg1, bg = p.bg4 })
+  vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = p.gray, bg = p.bg4 })
   vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { fg = p.red, bold = true })
 
   -- Command line prompt

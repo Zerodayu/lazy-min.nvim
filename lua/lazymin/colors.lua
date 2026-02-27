@@ -6,9 +6,9 @@ M.palette = {
   -- Base shades
   bg0 = "#0D0D0D",
   bg1 = "#131313",
-  bg2 = "#181818",
+  bg2 = "#282828",
   bg3 = "#212121",
-  bg4 = "#262626",
+  bg4 = "#1c1c1c",
 
   fg0 = "#FFFFFF",
   fg1 = "#EAEAEA",
