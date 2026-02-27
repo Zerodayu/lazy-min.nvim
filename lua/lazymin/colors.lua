@@ -6,7 +6,6 @@ M.palette = {
   -- Base shades
   bg0 = "#0D0D0D",
   bg1 = "#131313",
-  bg1 = "#121212",
   bg2 = "#333333",
   bg3 = "#212121",
   bg4 = "#262626",
@@ -95,9 +94,6 @@ function M.apply()
   set("TabLine", { fg = p.fg3, bg = p.bg2 })
   set("TabLineFill", { bg = p.bg1 })
   set("TabLineSel", { fg = p.fg1, bg = p.bg3, bold = true })
-
-  set("Title", { fg = p.red, bold = true })
-  set("FloatTitle", { fg = p.red, bg = p.bg3, bold = true })
 
   set("Pmenu", { fg = p.fg2, bg = p.bg3 })
   set("PmenuSel", { fg = p.fg1, bg = p.bg2 })
