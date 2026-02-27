@@ -13,7 +13,7 @@ function M.apply()
   vim.api.nvim_set_hl(0, "NeoTreeVertSplit", { fg = p.bg2, bg = p.bg1 })
 
   -- Title and tabs
-  vim.api.nvim_set_hl(0, "NeoTreeTitle", { fg = p.red, bg = p.bg4, bold = true })
+  vim.api.nvim_set_hl(0, "NeoTreeTitle", { fg = p.red, bg = p.bg1, bold = true })
   vim.api.nvim_set_hl(0, "NeoTreeWinBar", { fg = p.red, bg = p.bg1, bold = true })
   vim.api.nvim_set_hl(0, "NeoTreeTabInactive", { fg = p.fg3, bg = p.bg2 })
   vim.api.nvim_set_hl(0, "NeoTreeTabActive", { fg = p.red, bg = p.bg3, bold = true })
