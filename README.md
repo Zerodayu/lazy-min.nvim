@@ -22,7 +22,7 @@ TBD: Screenshots will be added soon.
 
 ```lua
 {
-  "zerodayu/lazymin.nvim",
+  "zerodayu/lazy-min.nvim",
   lazy = false,
   priority = 1000,
   config = function()
