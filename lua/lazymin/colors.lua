@@ -96,9 +96,6 @@ function M.apply()
   set("TabLineFill", { bg = p.bg1 })
   set("TabLineSel", { fg = p.fg1, bg = p.bg3, bold = true })
 
-  set("Title", { fg = p.red, bold = true })
-  set("FloatTitle", { fg = p.red, bg = p.bg3, bold = true })
-
   set("Pmenu", { fg = p.fg2, bg = p.bg3 })
   set("PmenuSel", { fg = p.fg1, bg = p.bg2 })
   set("PmenuSbar", { bg = p.bg2 })
