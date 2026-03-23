@@ -38,6 +38,7 @@ M.palette = {
 	blue = "#3B82F6",
 	purple = "#8D20B2",
 	cyan = "#1EA7A0",
+	green = "#0A6522",
 
 	pink = "#F87171",
 	magenta = "#B027DE",
