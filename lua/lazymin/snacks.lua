@@ -29,7 +29,7 @@ function M.apply()
 	vim.api.nvim_set_hl(0, "SnacksPicker", { fg = p.fg, bg = p.bg })
 	vim.api.nvim_set_hl(0, "SnacksPickerBorder", { fg = p.gray, bg = p.bg })
 	vim.api.nvim_set_hl(0, "SnacksPickerTitle", { fg = p.red, bg = p.bg, bold = true })
-	vim.api.nvim_set_hl(0, "SnacksPickerIcon", { fg = p.red })
+	vim.api.nvim_set_hl(0, "SnacksPickerIcon", { fg = p.fg })
 	vim.api.nvim_set_hl(0, "SnacksPickerIconDir", { fg = p.fg })
 	vim.api.nvim_set_hl(0, "SnacksPickerIconFile", { fg = p.fg })
 	vim.api.nvim_set_hl(0, "SnacksPickerMatch", { fg = p.light_red, bold = true })
@@ -117,4 +117,3 @@ function M.apply()
 end
 
 return M
-
