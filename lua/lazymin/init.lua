@@ -13,6 +13,10 @@ function M.snacks()
   require("lazymin.snacks").apply()
 end
 
+function M.mini_icons()
+  require("lazymin.mini-icons").apply()
+end
+
 function M.treesitter()
   require("nvim-treesitter.configs").setup({
     highlight = { enable = true },
