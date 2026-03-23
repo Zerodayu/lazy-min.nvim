@@ -4,7 +4,6 @@ local M = {}
 
 M.palette = {
 	-- Base shades
-	bg0 = "#0D0D0D",
 	bg1 = "#131313",
 	bg2 = "#282828",
 	bg3 = "#212121",
@@ -14,13 +13,11 @@ M.palette = {
 	fg1 = "#EAEAEA",
 	fg2 = "#BEBEBE",
 	fg3 = "#8A8A8D",
-	fg4 = "#333333",
 
 	-- Aliases for plugin integrations
 	fg = "#EAEAEA",
 	bg = "#121212",
 
-	selbg = "#262626",
 	selfg = "#FFFFFF",
 
 	comment = "#8A8A8D",
@@ -35,7 +32,6 @@ M.palette = {
 	amber = "#D97706",
 	yellow = "#FBBF24",
 	gold = "#EFBF04",
-	ochre = "#BF9903",
 
 	lavender = "#b392f0",
 	sky_blue = "#79b8ff",
@@ -324,6 +320,7 @@ function M.apply()
 	require("lazymin.todo-comments").apply()
 	require("lazymin.noice").apply()
 	require("lazymin.neotree").apply()
+	require("lazymin.mini-icons").apply()
 end
 
 return M
