@@ -25,7 +25,7 @@ function M.apply()
 	vim.api.nvim_set_hl(0, "TelescopePreviewMatch", { fg = p.crimson, bold = true })
 
 	-- Results
-	vim.api.nvim_set_hl(0, "TelescopeResultsNormal", { fg = p.fg1, bg = p.bg1 })
+	vim.api.nvim_set_hl(0, "TelescopeResultsNormal", { fg = p.cursor_red, bg = p.bg1 })
 	vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { fg = p.gray, bg = p.bg1 })
 	vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { fg = p.light_red, bg = p.bg1, bold = true })
 
